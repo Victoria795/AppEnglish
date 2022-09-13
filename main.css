@@ -1,0 +1,308 @@
+.frame-main-page{
+position: relative;
+width: 845px;
+height: 963px;
+background: #DEDEDE;
+}
+.card{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+gap: 10px;
+
+position: absolute;
+width: 475px;
+height: 277px;
+left: 41px;
+top: 39px;
+
+background: #F4F4F4;
+border-radius: 8px;
+}
+.card__task {
+position: absolute;
+width: 411px;
+height: 85px;
+left: 73px;
+top: 50px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #393939;
+}
+.card__input-name-label{
+position: absolute;
+width: 475px;
+height: 21px;
+left: 41px;
+top: 135px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+
+color: #000000;
+}
+.card__input-name {
+box-sizing: border-box;
+
+position: absolute;
+width: 282px;
+height: 39px;
+left: 138px;
+top: 179px;
+
+border: 1px solid #E9E9E9;
+border-radius: 4px;
+}
+.card__start{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 32px;
+gap: 10px;
+
+position: absolute;
+width: 128px;
+height: 44px;
+left: 215px;
+top: 248px;
+
+background: #7E90CE;
+box-shadow: 0px 2px 1px #1C358C;
+border-radius: 16px;
+}
+.card__start-text{
+width: 64px;
+height: 20px;
+
+font-family: 'Rubik One';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+/*Начало второй странички */
+.Frame3 {
+  width: 697px;
+}
+.Card2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+
+  position: absolute;
+  width: 444px;
+  height: 277px;
+  left: 54px;
+  top: 153px;
+
+  background: #F4F4F4;
+  border-radius: 8px;
+}
+.Star{
+position: absolute;
+left: 158px;
+right: 476px;
+top: 54px;
+bottom: 846px;
+}
+.StarNumber{
+position: absolute;
+left: 229px;
+right: 326px;
+top: 57px;
+bottom: 847px;
+
+font-family: 'Rubik One';
+font-style: normal;
+font-weight: 800;
+font-size: 48px;
+line-height: 59px;
+
+color: #FFB800;
+}
+.NumberOfC{
+position: absolute;
+width: 37px;
+height: 19px;
+left: 79px;
+top: 176px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+}
+.UpperText{
+position: absolute;
+width: 348px;
+height: 21px;
+left: 102px;
+top: 176px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+
+color: #000000;
+}
+.WordForProof{
+position: absolute;
+width: 348px;
+height: 20px;
+left: 102px;
+top: 204px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+
+color: #000000;
+
+}
+.Pass{
+position: absolute;
+width: 27px;
+height: 16px;
+left: 446px;
+top: 178px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+color: #2B3BC5
+}
+.wordButton {
+position: absolute;
+box-sizing: border-box;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 10px;
+
+background: #F1F1F1;
+border: 1px solid #E9E9E9;
+
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+}
+.A{
+width: 186px;
+height: 38px;
+left: 79px;
+top: 249px;
+}
+.B{
+width: 192px;
+height: 38px;
+left: 281px;
+top: 250px;
+}
+.C{
+width: 186px;
+height: 38px;
+left: 79px;
+top: 304px;
+}
+.D{
+width: 192px;
+height: 38px;
+left: 281px;
+top: 304px;
+}
+.E{
+width: 186px;
+height: 38px;
+left: 79px;
+top: 358px;
+}
+.F{
+width: 192px;
+height: 38px;
+left: 281px;
+top: 358px;
+}
+.LetterSpace{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 2px 5px;
+gap: 10px;
+
+width: 21px;
+height: 21px;
+
+background: #608CFF;
+border-radius: 8px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.Letter{
+
+width: 11px;
+height: 17px;
+
+font-family: 'Rubik One';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+
+color: #FFFFFF;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.Text {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+color: #000000;
+
+flex: none;
+order: 1;
+flex-grow: 1;
+}

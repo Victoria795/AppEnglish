@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn words easy!</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="frame-main-page" >
+    <div class="card">
+      <span class="card__task">Выбирая правильные ответы, вы будете получать
+        определенное количество баллов. Количество баллов зависит от сложности.
+        За неправильный ответ, баллы будут вычитаться. Удачи!</span>
+      <label for="name" class="card__input-name-label">Как вас зовут?</label>
+      <input type="text" name="name" class="card__input-name">
+      <button type="submit" class="card__start"><span class"card__start-text">Начать</span></button>
+     </div>
+   </div>
+   <div class="frame-main-page frame-word-page" style="display: none">
+     <div class="score-star"><img src="images/Star 1.png"><img></div>
+     <div class="score">0000</div>
+     <div class="word-card"> </div>
+       <span class="word-card__">1/20</span>
+       <span class="UpperText">Перевод слова (15 баллов)</span>
+       <span class="Pass">Пасс</span>
+       <span class="WordForProof">слово для проверки</span>
+       <button type="submit" class="wordButton A"><div class="LetterSpace"><span class="Letter">A</span></div><span class="Text">Первый в</span></button>
+       <button type="submit" class="wordButton B"><div class="LetterSpace"><span class="Letter">B</span></div><span class="Text">Второй в</span></button>
+       <button type="submit" class="wordButton C"><div class="LetterSpace"><span class="Letter">C</span></div><span class="Text">Третий в</span></button>
+       <button type="submit" class="wordButton D"><div class="LetterSpace"><span class="Letter">D</span></div><span class="Text">Четвертый в</span></button>
+       <button type="submit" class="wordButton E"><div class="LetterSpace"><span class="Letter">E</span></div><span class="Text">Пятый в</span></button>
+       <button type="submit" class="wordButton F"><div class="LetterSpace"><span class="Letter">F</span></div><span class="Text">Шестой в</span></button>
+       <script src="main.js"></script>
+   </div>
+</body>
+</html>
