@@ -1,308 +1,222 @@
-.frame-main-page{
-position: relative;
-width: 845px;
-height: 963px;
-background: #DEDEDE;
+.wrap-main{
+  position: relative;
+  width: 845px;
+  height: 963px;
+  background: #DEDEDE;
 }
-.card{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 16px;
-gap: 10px;
-
-position: absolute;
-width: 475px;
-height: 277px;
-left: 41px;
-top: 39px;
-
-background: #F4F4F4;
-border-radius: 8px;
-}
-.card__task {
-position: absolute;
-width: 411px;
-height: 85px;
-left: 73px;
-top: 50px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #393939;
-}
-.card__input-name-label{
-position: absolute;
-width: 475px;
-height: 21px;
-left: 41px;
-top: 135px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-text-align: center;
-
-color: #000000;
-}
-.card__input-name {
-box-sizing: border-box;
-
-position: absolute;
-width: 282px;
-height: 39px;
-left: 138px;
-top: 179px;
-
-border: 1px solid #E9E9E9;
-border-radius: 4px;
-}
-.card__start{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 32px;
-gap: 10px;
-
-position: absolute;
-width: 128px;
-height: 44px;
-left: 215px;
-top: 248px;
-
-background: #7E90CE;
-box-shadow: 0px 2px 1px #1C358C;
-border-radius: 16px;
-}
-.card__start-text{
-width: 64px;
-height: 20px;
-
-font-family: 'Rubik One';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-color: #FFFFFF;
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-/*Начало второй странички */
-.Frame3 {
-  width: 697px;
-}
-.Card2{
+.container{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px;
   gap: 10px;
-
   position: absolute;
-  width: 444px;
+  width: 475px;
   height: 277px;
-  left: 54px;
-  top: 153px;
-
+  left: 41px;
+  top: 39px;
   background: #F4F4F4;
   border-radius: 8px;
 }
-.Star{
+.container__task {
+  position: absolute;
+  width: 411px;
+  height: 85px;
+  left: 73px;
+  top: 50px;
+  font: normal 400 12px/16px 'Open Sans';
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #393939;
+}
+.container__input-name-label{
+  position: absolute;
+  width: 475px;
+  height: 21px;
+  left: 41px;
+  top: 135px;
+  font: normal 400 16px/22px 'Open Sans';
+  text-align: center;
+  color: #000000;
+}
+.container__input-name {
+  box-sizing: border-box;
+  position: absolute;
+  width: 282px;
+  height: 39px;
+  left: 138px;
+  top: 179px;
+  border: 1px solid #E9E9E9;
+  border-radius: 4px;
+}
+.container__start{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 128px;
+  height: 44px;
+  left: 215px;
+  top: 248px;
+  background: #7E90CE;
+  box-shadow: 0px 2px 1px #1C358C;
+  border-radius: 16px;
+}
+.container__start-text{
+  width: 64px;
+  height: 20px;
+  font: normal 400 16px/20px 'Rubik One';
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+}
+/*Начало второй странички */
+.wrap-words {
+width: 697px;
+}
+.box{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+gap: 10px;
+position: absolute;
+width: 444px;
+height: 277px;
+left: 54px;
+top: 153px;
+background: #F4F4F4;
+border-radius: 8px;
+}
+.score-star{
 position: absolute;
 left: 158px;
 right: 476px;
 top: 54px;
 bottom: 846px;
 }
-.StarNumber{
+.score{
 position: absolute;
 left: 229px;
 right: 326px;
 top: 57px;
 bottom: 847px;
-
-font-family: 'Rubik One';
-font-style: normal;
-font-weight: 800;
-font-size: 48px;
-line-height: 59px;
-
+font: normal 800 48px/59px 'Rubik One';
 color: #FFB800;
 }
-.NumberOfC{
+.box__order{
 position: absolute;
 width: 37px;
 height: 19px;
 left: 79px;
 top: 176px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-
+font: normal 400 14px/19px 'Open Sans';
 color: #000000;
 }
-.UpperText{
+.box__task{
 position: absolute;
 width: 348px;
 height: 21px;
 left: 102px;
 top: 176px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
+font: normal 400 16px/22px 'Open Sans';
 text-align: center;
-
 color: #000000;
 }
-.WordForProof{
+.box__check-word{
 position: absolute;
 width: 348px;
 height: 20px;
 left: 102px;
 top: 204px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 16px;
-line-height: 22px;
+font: normal 800 16px/22px 'Open Sans';
 text-align: center;
-
 color: #000000;
-
 }
-.Pass{
+.box__pass{
 position: absolute;
 width: 27px;
 height: 16px;
 left: 446px;
 top: 178px;
-
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-
+font: normal 400 12px/16px 'Open Sans';
 color: #2B3BC5
 }
-.wordButton {
+.btn{
 position: absolute;
 box-sizing: border-box;
-
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 8px 24px;
 gap: 10px;
-
 background: #F1F1F1;
 border: 1px solid #E9E9E9;
-
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 border-radius: 20px;
 }
-.A{
+.box__btn_1st{
 width: 186px;
 height: 38px;
 left: 79px;
 top: 249px;
 }
-.B{
+.box__btn_2nd{
 width: 192px;
 height: 38px;
 left: 281px;
 top: 250px;
 }
-.C{
+.box__btn_3rd{
 width: 186px;
 height: 38px;
 left: 79px;
 top: 304px;
 }
-.D{
+.box__btn_4th{
 width: 192px;
 height: 38px;
 left: 281px;
 top: 304px;
 }
-.E{
+.box__btn_5th{
 width: 186px;
 height: 38px;
 left: 79px;
 top: 358px;
 }
-.F{
+.box__btn_6th{
 width: 192px;
 height: 38px;
 left: 281px;
 top: 358px;
 }
-.LetterSpace{
+.btn__icon{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 padding: 2px 5px;
 gap: 10px;
-
 width: 21px;
 height: 21px;
-
 background: #608CFF;
 border-radius: 8px;
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-.Letter{
-
-width: 11px;
-height: 17px;
-
-font-family: 'Rubik One';
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 17px;
-
+font: normal 800 14px/17px 'Rubik One';
 color: #FFFFFF;
-
-flex: none;
-order: 0;
-flex-grow: 0;
 }
-.Text {
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-
+.btn__icon-text{
+margin: auto;
+}
+.btn__text {
+font: normal 400 16px/22px 'Open Sans';
 color: #000000;
-
-flex: none;
+flex: 1;
 order: 1;
 flex-grow: 1;
 }

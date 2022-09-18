@@ -8,30 +8,30 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="frame-main-page" >
-    <div class="card">
-      <span class="card__task">Выбирая правильные ответы, вы будете получать
+  <div class="wrap-main" style="display: none">
+    <div class="container">
+      <span class="container__task">Выбирая правильные ответы, вы будете получать
         определенное количество баллов. Количество баллов зависит от сложности.
         За неправильный ответ, баллы будут вычитаться. Удачи!</span>
-      <label for="name" class="card__input-name-label">Как вас зовут?</label>
-      <input type="text" name="name" class="card__input-name">
-      <button type="submit" class="card__start"><span class"card__start-text">Начать</span></button>
+      <label for="name" class="container__input-name-label">Как вас зовут?</label>
+      <input type="text" name="name" class="container__input-name">
+      <button type="submit" class="container__start"><span class"container__start-text">Начать</span></button>
      </div>
    </div>
-   <div class="frame-main-page frame-word-page" style="display: none">
+   <div class="wrap-main wrap-words">
      <div class="score-star"><img src="images/Star 1.png"><img></div>
      <div class="score">0000</div>
-     <div class="word-card"> </div>
-       <span class="word-card__">1/20</span>
-       <span class="UpperText">Перевод слова (15 баллов)</span>
-       <span class="Pass">Пасс</span>
-       <span class="WordForProof">слово для проверки</span>
-       <button type="submit" class="wordButton A"><div class="LetterSpace"><span class="Letter">A</span></div><span class="Text">Первый в</span></button>
-       <button type="submit" class="wordButton B"><div class="LetterSpace"><span class="Letter">B</span></div><span class="Text">Второй в</span></button>
-       <button type="submit" class="wordButton C"><div class="LetterSpace"><span class="Letter">C</span></div><span class="Text">Третий в</span></button>
-       <button type="submit" class="wordButton D"><div class="LetterSpace"><span class="Letter">D</span></div><span class="Text">Четвертый в</span></button>
-       <button type="submit" class="wordButton E"><div class="LetterSpace"><span class="Letter">E</span></div><span class="Text">Пятый в</span></button>
-       <button type="submit" class="wordButton F"><div class="LetterSpace"><span class="Letter">F</span></div><span class="Text">Шестой в</span></button>
+     <div class="box"> </div>
+       <span class="box__order">1/20</span>
+       <span class="box__task">Перевод слова (15 баллов)</span>
+       <span class="box__pass">Пасс</span>
+       <span class="box__check-word">слово для проверки</span>
+       <button type="submit" class="btn box__btn_1st"><div class="btn__icon"><span class="btn__icon-text">A</span></div><span class="btn__text">Первый в</span></button>
+       <button type="submit" class="btn box__btn_2nd"><div class="btn__icon"><span class="btn__icon-text">B</span></div><span class="btn__text">Второй в</span></button>
+       <button type="submit" class="btn box__btn_3rd"><div class="btn__icon"><span class="btn__icon-text">C</span></div><span class="btn__text">Третий в</span></button>
+       <button type="submit" class="btn box__btn_4th"><div class="btn__icon"><span class="btn__icon-text">D</span></div><span class="btn__text">Четвертый в</span></button>
+       <button type="submit" class="btn box__btn_5th"><div class="btn__icon"><span class="btn__icon-text">E</span></div><span class="btn__text">Пятый в</span></button>
+       <button type="submit" class="btn box__btn_6th"><div class="btn__icon"><span class="btn__icon-text">F</span></div><span class="btn__text">Шестой в</span></button>
        <script src="main.js"></script>
    </div>
 </body>
