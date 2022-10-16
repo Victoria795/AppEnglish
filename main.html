@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="wrap-main" style="display: none">
+  <div class="active">
+  <div class="wrap-main">
     <div class="container">
       <span class="container__task">Выбирая правильные ответы, вы будете получать
         определенное количество баллов. Количество баллов зависит от сложности.
@@ -18,21 +19,24 @@
       <input name="button-start" type="button" class="container__start" value="Начать">
      </div>
    </div>
-   <div class="wrap-main" >
+  </div>
+  <div class="non-active">
+   <div class="wrap-main">
     <div class="score"><img src="images/Star 1.png"><img>0000</div>
     <div class="box">
-       <span class="box__order">1/20</span>
+       <span class="box__order"><span id="js_indicator">1</span>/20</span>
        <span class="box__task">Перевод слова (15 баллов)</span>
        <span class="box__pass">Пасс</span>
        <span class="box__check-word">слово для проверки</span>
-       <button type="button" class="btn"><div class="btn__icon">A</div><span class="btn__text">Первый в</span></button>
+       <button type="button" class="btn" ><div class="btn__icon">A</div><span class="btn__text">Первый в</span></button>
        <button type="button" class="btn"><div class="btn__icon">B</div><span class="btn__text">Второй в</span></button>
        <button type="button" class="btn"><div class="btn__icon">C</div><span class="btn__text">Третий в</span></button>
        <button type="button" class="btn"><div class="btn__icon">D</div><span class="btn__text">Четвертый в</span></button>
        <button type="button" class="btn"><div class="btn__icon">E</div><span class="btn__text">Пятый в</span></button>
        <button type="button" class="btn"><div class="btn__icon">F</div><span class="btn__text">Шестой в</span></button>
     </div>
+  </div>
+  </div>
     <script src="main.js"></script>
-   </div>
 </body>
 </html>
