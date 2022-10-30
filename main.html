@@ -10,7 +10,7 @@
   <script src="main.js" defer></script>
 </head>
 <body>
-  <div class="active">
+  <div id="js__name-block" class="active">
   <div class="wrap-main">
     <div class="container">
       <span class="container__task">Выбирая правильные ответы, вы будете получать
@@ -18,24 +18,40 @@
         За неправильный ответ, баллы будут вычитаться. Удачи!</span>
       <label for="name" class="container__input-name-label">Как вас зовут?</label>
       <input type="text" name="name" class="container__input-name">
-      <input name="button-start" type="button" class="container__start" value="Начать">
+      <input name="button-continue" type="button" class="container__continue" value="Далее">
      </div>
    </div>
   </div>
-  <div class="non-active">
+  <div id="js__theme-block" class="non-active">
+    <div class="wrap-main">
+      <div class="main-block">
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Животные"><span>Животные</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Путешествия"><span>Путешествия</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Школа"><span>Школа</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Внешность"><span>Внешность</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Одежда"><span>Одежда</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Дом"><span>Дом</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Спорт"><span>Спорт</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Эмоции"><span>Эмоции</span></label>
+        <label class="main-block__theme"><input name="theme" type="checkbox" value="Еда"><span>Еда</span></label>
+        <input name="button-continue" type="button" class="container__continue" id="js__button-start" value="Начать">
+      </div>
+    </div>
+  </div>
+  <div id="js__words-block" class="non-active">
    <div class="wrap-main">
-    <div class="score"><img src="images/Star 1.png"><img>0000</div>
+    <div class="score"><img src="images/Star 1.png"><img><span id="js_score">0</span></div>
     <div class="box">
        <span class="box__order"><span id="js_indicator">1</span>/20</span>
        <span class="box__task">Перевод слова (15 баллов)</span>
-       <span class="box__pass">Пасс</span>
-       <span class="box__check-word">слово для проверки</span>
-       <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>A</div><span class="btn__text" data-btn>Первый в</span></button>
-       <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>B</div><span class="btn__text" data-btn>Второй в</span></button>
-       <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>C</div><span class="btn__text" data-btn>Третий в</span></button>
-       <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>D</div><span class="btn__text" data-btn>Четвертый в</span></button>
-       <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>E</div><span class="btn__text" data-btn>Пятый в</span></button>
-       <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>F</div><span class="btn__text" data-btn>Шестой в</span></button>
+       <span class="box__pass" data-btn>Пасс</span>
+       <span class="box__check-word"></span>
+       <button type="checkbox" class="btn" data-btn><div class="btn__icon" data-btn>A</div><span class="btn__text btn1" data-btn>Первый в</span></button>
+       <button type="checkbox" class="btn" data-btn><div class="btn__icon" data-btn>B</div><span class="btn__text btn2" data-btn>Второй в</span></button>
+       <button type="checkbox" class="btn" data-btn><div class="btn__icon" data-btn>C</div><span class="btn__text btn3" data-btn>Третий в</span></button>
+       <button type="checkbox" class="btn" data-btn><div class="btn__icon" data-btn>D</div><span class="btn__text btn4" data-btn>Четвертый в</span></button>
+       <button type="checkbox" class="btn" data-btn><div class="btn__icon" data-btn>E</div><span class="btn__text btn5" data-btn>Пятый в</span></button>
+       <button type="checkbox" class="btn" data-btn><div class="btn__icon" data-btn>F</div><span class="btn__text btn6" data-btn>Шестой в</span></button>
     </div>
   </div>
   </div>
