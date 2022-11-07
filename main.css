@@ -151,7 +151,7 @@ input:checked + span{
  color: #000000;
 }
 .box__task{
- width: 348px;
+ width: 335px;
  font: normal 400 16px/22px 'Open Sans', sans-serif;
  text-align: center;
  color: #000000;
@@ -163,6 +163,9 @@ input:checked + span{
  color: #000000;
 }
 .box__pass{
+  appearance: none;
+  border: none;
+  background: #F4F4F4;
   font: normal 400 13px/16px 'Open Sans', sans-serif;
   color: #2B3BC5
  }

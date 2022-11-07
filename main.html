@@ -7,6 +7,9 @@
   <title>Learn words easy!</title>
   <link rel="stylesheet" href="main.css">
   <script src="words.js"></script>
+  <script src="animals.json"></script>
+  <script src="domUtils.js" defer></script>
+  <script src="gameUtils.js" defer></script>
   <script src="main.js" defer></script>
 </head>
 <body>
@@ -44,7 +47,7 @@
     <div class="box">
        <span class="box__order"><span id="js_indicator">1</span>/20</span>
        <span class="box__task">Перевод слова (15 баллов)</span>
-       <span class="box__pass" data-btn>Пасс</span>
+       <button class="box__pass" data-btn>Пасс</button>
        <span class="box__check-word"></span>
        <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>A</div><span class="btn__text btn1" data-btn>Первый в</span></button>
        <button type="button" class="btn" data-btn><div class="btn__icon" data-btn>B</div><span class="btn__text btn2" data-btn>Второй в</span></button>
