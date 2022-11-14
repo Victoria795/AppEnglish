@@ -1,7 +1,10 @@
 nameStorage();
-buttonContinue.addEventListener('click',buttonContinueSwitch);
+buttonContinue.addEventListener('click',()=>{
+    switchPages(themeBlock);
+    setStorage('userName', userName.value);
+});
 buttonStart.addEventListener('click',()=>{
-   wordsBlock.classList.remove('non-active');
+   switchPages(wordsBlock);
    scoreStorage();
    //indicatorStorage();
    appelation();
@@ -17,19 +20,21 @@ let checkWord = document.querySelector('.box__check-word'),
     btn6 = document.querySelector('.btn6');  
 function appelation () {
         checkWord.innerHTML = wordStock[i].word;
-        btn1.innerHTML = wordStock[i].variants[0];
-        btn2.innerHTML = wordStock[i].variants[1];
-        btn3.innerHTML = wordStock[i].variants[2];
-        btn4.innerHTML = wordStock[i].variants[3];
-        btn5.innerHTML = wordStock[i].variants[4];
-        btn6.innerHTML = wordStock[i].variants[5];
+        btnsHTML(btn1, 0);
+        btnsHTML(btn2, 1);
+        btnsHTML(btn3, 2);
+        btnsHTML(btn4, 3);
+        btnsHTML(btn5, 4);
+        btnsHTML(btn6, 5);
     }
 clickBox.addEventListener('click', function(event) {
         if (event.target.dataset.btn != undefined){  
         execute();
         scoreCount();
-        if(indicatorNumber<20){setTimeout(function(){appelation();
-            removeClass();},1000);}     
+        if(indicatorNumber<20){
+        setTimeout(function(){
+        appelation();
+        removeClass();},1000);}     
   }
 });
 let btns = document.querySelectorAll('.btn');
@@ -39,13 +44,8 @@ function execute() {
 }
 function checkAnswer(btn,index) { 
     btn.addEventListener('click',()=>{
-       if(wordStock[i].answer === index){
-        btn.classList.add('btn-right');
-       }
-       else{
-        btn.classList.add('btn-wrong');
-       } 
-    });
+        wordStock[i].answer === index ? btn.classList.add('btn-right') : btn.classList.add('btn-wrong');
+})
 }
 let score = document.getElementById('js_score'),
     currentScore = 0;
@@ -55,18 +55,15 @@ function scoreCount() {
     let passButton = event.target.closest('.box__pass');
     if (correctAnswer){
     addScore(15);
-    i = Math.floor(Math.random() * 20);
-    setTimeout(counter, 1000);
-    buttons.forEach(disable);
+    afterAnswerClick();
 }
    else if(wrongAnswer||passButton){
     subScore(15);
-    i = Math.floor(Math.random() * 20);
-    setTimeout(counter, 1000);
-    buttons.forEach(disable);
+    afterAnswerClick();
    }
    score.innerHTML = currentScore;
-   sessionStorage.setItem('score', currentScore);
+   setStorage('score', currentScore);
 };
+
 
   

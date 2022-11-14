@@ -14,7 +14,12 @@ function scoreStorage(){
     indicatorNumber = sessionStorage.getItem('indicator');
     indicator.innerHTML = indicatorNumber;
 }*/
-function buttonContinueSwitch(){
-    themeBlock.classList.remove('non-active');
-    sessionStorage.setItem('userName', userName.value);
+function switchPages(item){
+    item.classList.remove('non-active');
+}
+function btnsHTML(button, variantNum){
+    button.innerHTML = wordStock[i].variants[variantNum];
+}
+function setStorage(key, name){
+    sessionStorage.setItem(key, name);
 }

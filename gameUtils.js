@@ -13,7 +13,7 @@ function subScore(points){
 function counter() { if(indicatorNumber < 20){ 
     indicatorNumber++;
     indicator.innerHTML = indicatorNumber;
-    sessionStorage.setItem('indicator', indicatorNumber);
+    setStorage('indicator', indicatorNumber);
     };}  
 function removeClass() {
         for(let b = 0;b<clickBox.children.length;b++){
@@ -22,3 +22,9 @@ function removeClass() {
         clickBox.children[b].removeAttribute('disabled');
     }
     };
+function afterAnswerClick(){
+        i = Math.floor(Math.random() * 20);
+        setTimeout(counter, 1000);
+        buttons.forEach(disable);
+    }
+    
